@@ -17,7 +17,15 @@ ChoosePlayerName:
 	call DisplayNamingScreen
 	ld a, [wcf4b]
 	cp "@"
-	jr z, .customName
+	jr nz, .notBlankName
+	ld a, 1 ; first Default Name
+	ld hl, DefaultNamesPlayerList
+	call GetDefaultName
+	ld hl, wcd6d
+	ld de, wPlayerName
+	ld bc, NAME_LENGTH
+	call CopyData
+.notBlankName
 	call ClearScreen
 	call Delay3
 	ld de, RedPicFront
@@ -50,7 +58,15 @@ ChooseRivalName:
 	call DisplayNamingScreen
 	ld a, [wcf4b]
 	cp "@"
-	jr z, .customName
+	jr nz, .notBlankName
+	ld a, 1 ; first Default Name
+	ld hl, DefaultNamesRivalList
+	call GetDefaultName
+	ld hl, wcd6d
+	ld de, wRivalName
+	ld bc, NAME_LENGTH
+	call CopyData
+.notBlankName
 	call ClearScreen
 	call Delay3
 	ld de, Rival1Pic
