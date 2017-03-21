@@ -18,10 +18,7 @@ ChoosePlayerName:
 	ld a, [wcf4b]
 	cp "@"
 	jr nz, .notBlankName
-	ld a, 1 ; first Default Name
-	ld hl, DefaultNamesPlayerList
-	call GetDefaultName
-	ld hl, wcd6d
+	ld hl, PlayerDefaultName
 	ld de, wPlayerName
 	ld bc, NAME_LENGTH
 	call CopyData
@@ -59,10 +56,7 @@ ChooseRivalName:
 	ld a, [wcf4b]
 	cp "@"
 	jr nz, .notBlankName
-	ld a, 1 ; first Default Name
-	ld hl, DefaultNamesRivalList
-	call GetDefaultName
-	ld hl, wcd6d
+	ld hl, RivalDefaultName
 	ld de, wRivalName
 	ld bc, NAME_LENGTH
 	call CopyData
@@ -262,11 +256,13 @@ GetDefaultName:
 IF DEF(_RED)
 DefaultNamesPlayerList:
 	db "NEW NAME@"
+PlayerDefaultName:
 	db "RED@"
 	db "ASH@"
 	db "JACK@"
 DefaultNamesRivalList:
 	db "NEW NAME@"
+RivalDefaultName:
 	db "BLUE@"
 	db "GARY@"
 	db "JOHN@"
@@ -274,11 +270,13 @@ ENDC
 IF DEF(_BLUE)
 DefaultNamesPlayerList:
 	db "NEW NAME@"
+PlayerDefaultName:
 	db "BLUE@"
 	db "GARY@"
 	db "JOHN@"
 DefaultNamesRivalList:
 	db "NEW NAME@"
+RivalDefaultName:
 	db "RED@"
 	db "ASH@"
 	db "JACK@"
