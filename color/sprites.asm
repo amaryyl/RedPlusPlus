@@ -507,7 +507,7 @@ SpritePaletteAssignments: ; Characters on the overworld
 	db PAL_ROCK
 
 	; SPRITE_TOWN_MAP
-	db PAL_ORANGE
+	db PAL_BLUE
 
 	; SPRITE_N64
 	db PAL_BLUE

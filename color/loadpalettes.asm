@@ -117,7 +117,8 @@ LoadTilesetPalette:
 
 	; Set the remaining values to zero
 	ld b,$a0
-	xor a
+	;xor a
+	ld a, 7
 .fillLoop
 	ld [hli],a
 	dec b
