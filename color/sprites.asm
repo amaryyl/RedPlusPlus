@@ -15,10 +15,10 @@ PAL_ORANGE	EQU 0
 PAL_BLUE	EQU 1
 PAL_GREEN	EQU 2
 PAL_BROWN	EQU 3
-PAL_RANDOM  EQU 4
-PAL_EMOJI   EQU 5
-PAL_PLANT   EQU 6
-PAL_ROCK    EQU 7
+PAL_RANDOM	EQU 4
+PAL_EMOJI	EQU 5
+PAL_PLANT	EQU 6
+PAL_ROCK	EQU 7
 
 LoadSpritePalettes:
 	ld hl,SpritePalettes
@@ -64,7 +64,7 @@ ColorOverworldSprites:
 	ld a,[de]		; Get the picture ID's palette
 
 	; If it's 4, that means no particular palette is assigned
-	cp 4
+	cp PAL_RANDOM
 	jr nz,.norandomColor
 
 	; This is a (somewhat) random but consistent color
@@ -373,11 +373,72 @@ SpritePaletteAssignments: ; Characters on the overworld
 	; 0x3c: SPRITE_SEEL
 	db PAL_ORANGE
 
+	; SPRITE_BROCK
+	db PAL_BROWN
+
+	; SPRITE_MISTY
+	db PAL_ORANGE
+
+	; SPRITE_SURGE
+	db PAL_GREEN
+
+	; SPRITE_SABRINA
+	db PAL_ORANGE
+
+	; SPRITE_KOGA
+	db PAL_BLUE
+
+	; SPRITE_BLAINE
+	db PAL_BROWN
+
+	; SPRITE_BRENDAN
+	db PAL_BROWN
+
+	; SPRITE_FLANNERY
+	db PAL_ORANGE
+
+	; SPRITE_GREETER
+	db PAL_RANDOM
+
+	; SPRITE_LAPRAS
+	db PAL_BLUE
+
+	; SPRITE_SURF_PIKACHU
+	db PAL_ORANGE
+
+	; SPRITE_LOOKER
+	db PAL_BROWN
+
+	; SPRITE_SWIMMER_F
+	db PAL_BLUE
+
+	; SPRITE_OFFICER_JENNY
+	db PAL_BLUE
+
+	; SPRITE_JESSIE
+	db PAL_ORANGE
+
+	; SPRITE_JAMES
+	db PAL_BLUE
+
+	; SPRITE_GOLD
+	db PAL_ORANGE
+
+	; SPRITE_CRYSTAL
+	db PAL_BLUE
+
+	; SPRITE_SILVER
+	db PAL_ORANGE
+
+
+	; 1-Frame Sprites Below here
+
+
 	; 0x3d: SPRITE_BALL
 	db PAL_ORANGE
 
 	; 0x3e: SPRITE_OMANYTE
-	db PAL_RANDOM
+	db PAL_BLUE
 
 	; 0x3f: SPRITE_BOULDER
 	db PAL_ROCK
@@ -394,20 +455,65 @@ SpritePaletteAssignments: ; Characters on the overworld
 	; 0x43: SPRITE_SNORLAX
 	db PAL_ORANGE
 
-	; 0x44: SPRITE_OLD_AMBER_COPY
+	; 0x44: SPRITE_BAG
 	db PAL_BROWN
 
 	; 0x45: SPRITE_OLD_AMBER
 	db PAL_BROWN
 
-	; 0x46: SPRITE_LYING_OLD_MAN_UNUSED_1
-	db PAL_RANDOM
+	; 0x46: SPRITE_POKEDEX
+	db PAL_ORANGE
 
-	; 0x47: SPRITE_LYING_OLD_MAN_UNUSED_2
-	db PAL_RANDOM
+	; 0x47: SPRITE_BERRY_TREE
+	db PAL_PLANT
 
 	; 0x48: SPRITE_LYING_OLD_MAN
 	db PAL_RANDOM
+
+	; SPRITE_SUDOWOODO
+	db PAL_GREEN
+
+	; SPRITE_POKEY
+	db PAL_ORANGE
+
+	; SPRITE_DITTO
+	db PAL_ORANGE
+
+	; SPRITE_CELEBI
+	db PAL_GREEN
+
+	; SPRITE_GYARADOS
+	db PAL_ORANGE
+
+	; SPRITE_ARTICUNO
+	db PAL_BLUE
+
+	; SPRITE_ZAPDOS
+	db PAL_ORANGE
+
+	; SPRITE_MOLTRES
+	db PAL_ORANGE
+
+	; SPRITE_MEWTWO
+	db PAL_BROWN
+
+	; SPRITE_MEW
+	db PAL_BROWN
+
+	; SPRITE_FOSSIL
+	db PAL_ROCK
+
+	; SPRITE_ROCK_SMASH
+	db PAL_ROCK
+
+	; SPRITE_TOWN_MAP
+	db PAL_ORANGE
+
+	; SPRITE_N64
+	db PAL_BLUE
+
+	; SPRITE_TROPHY
+	db PAL_ROCK
 
 
 AnimationTileset1Palettes:
