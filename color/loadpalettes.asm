@@ -115,9 +115,8 @@ LoadTilesetPalette:
 	dec b
 	jr nz,.copyLoop
 
-	; Set the remaining values to zero
+	; Set the remaining tiles (the font) to CRYS_TEXTBOX
 	ld b,$a0
-	;xor a
 	ld a, 7
 .fillLoop
 	ld [hli],a
