@@ -17,7 +17,7 @@ PowerPlantObject:
 	object SPRITE_BALL, $1a, $1c, STAY, NONE, $6, VOLTORB, 40
 	object SPRITE_BALL, $15, $e, STAY, NONE, $7, ELECTRODE, 43
 	object SPRITE_BALL, $25, $20, STAY, NONE, $8, VOLTORB, 40
-	object SPRITE_ZAPDOS, $4, $9, STAY, UP, $9, ZAPDOS, 50
+	object SPRITE_ZAPDOS, $4, $9, STAY, NONE, $9, ZAPDOS, 50
 	object SPRITE_BALL, $7, $19, STAY, NONE, $a, CARBOS
 	object SPRITE_BALL, $1c, $3, STAY, NONE, $b, HP_UP
 	object SPRITE_BALL, $22, $3, STAY, NONE, $c, RARE_CANDY
