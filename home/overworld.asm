@@ -288,7 +288,7 @@ OverworldLoopLessDelay::
 	call DoBikeSpeedup
 	jr .notRunning
 .normalPlayerSpriteAdvancement
-	; make you surf at bike speed
+	; make you surf at running speed
 	ld a, [wWalkBikeSurfState]
 	cp 2 ; surfing
 	jr z, .surfFaster

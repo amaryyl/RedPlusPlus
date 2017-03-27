@@ -649,6 +649,11 @@ SpriteSheetPointerTable: ; 17b27 (5:7b27)
 	db $40 ; byte count
 	db BANK(LyingOldManSprite)
 	
+	; SPRITE_BENCH_GUY
+	dw BenchGuySprite
+	db $40 ; byte count
+	db BANK(BenchGuySprite)
+	
 	; SPRITE_SUDOWOODO
 	dw SudowoodoSprite
 	db $40 ; byte count

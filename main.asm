@@ -350,6 +350,7 @@ SsCaptainSprite:       INCBIN "gfx/sprites/ss_captain.2bpp"
 Fisher2Sprite:         INCBIN "gfx/sprites/fisher2.2bpp"
 BlackbeltSprite:       INCBIN "gfx/sprites/blackbelt.2bpp"
 GuardSprite:           INCBIN "gfx/sprites/guard.2bpp"
+BenchGuySprite:        INCBIN "gfx/sprites/bench_guy.2bpp"
 
 
 SECTION "Graphics", ROMX, BANK[GFX]

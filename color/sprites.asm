@@ -314,7 +314,7 @@ SpritePaletteAssignments: ; Characters on the overworld
 	db PAL_RANDOM
 
 	; 0x29: SPRITE_NURSE
-	db PAL_BLUE
+	db PAL_ORANGE
 
 	; 0x2a: SPRITE_CABLE_CLUB_WOMAN
 	db PAL_GREEN
@@ -468,6 +468,9 @@ SpritePaletteAssignments: ; Characters on the overworld
 	db PAL_PLANT
 
 	; 0x48: SPRITE_LYING_OLD_MAN
+	db PAL_RANDOM
+
+	; SPRITE_BENCH_GUY
 	db PAL_RANDOM
 
 	; SPRITE_SUDOWOODO
