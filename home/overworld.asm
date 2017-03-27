@@ -282,8 +282,23 @@ OverworldLoopLessDelay::
 	ld a,[wd736]
 	bit 6,a ; jumping a ledge?
 	jr nz,.normalPlayerSpriteAdvancement
+	; bike is 4x faster than walking
 	call DoBikeSpeedup
+	call DoBikeSpeedup
+	call DoBikeSpeedup
+	jr .notRunning
 .normalPlayerSpriteAdvancement
+	; make you surf at bike speed
+	ld a, [wWalkBikeSurfState]
+	cp 2 ; surfing
+	jr z, .surfFaster
+	; add Running Shoes
+	ld a, [hJoyHeld]
+	and B_BUTTON
+	jr z, .notRunning
+.surfFaster ; Running/Surfing is 2x faster than walking
+	call DoBikeSpeedup
+.notRunning ; normal code resumes here
 	call AdvancePlayerSprite
 	ld a,[wWalkCounter]
 	and a
