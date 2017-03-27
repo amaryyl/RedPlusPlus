@@ -93,6 +93,21 @@ const_value = 1
 	const SPRITE_GOLD
 	const SPRITE_CRYSTAL
 	const SPRITE_SILVER
+	const SPRITE_MEI
+	const SPRITE_ELM
+	const SPRITE_GOLD_MOM
+	const SPRITE_KURT
+	const SPRITE_KIMONO_GIRL
+	const SPRITE_FALKNER
+	const SPRITE_BUGSY
+	const SPRITE_WHITNEY
+	const SPRITE_MORTY
+	const SPRITE_JASMINE
+	const SPRITE_CHUCK
+	const SPRITE_PRYCE
+	const SPRITE_CLAIR
+	const SPRITE_WILL
+	const SPRITE_KAREN
 ; Sprites after this are only 1 frame
 	const SPRITE_BALL                      ;EQU $3d
 	const SPRITE_OMANYTE                   ;EQU $3e

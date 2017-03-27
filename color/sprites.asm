@@ -429,6 +429,51 @@ SpritePaletteAssignments: ; Characters on the overworld
 
 	; SPRITE_SILVER
 	db PAL_ORANGE
+	
+	; SPRITE_MEI
+	db PAL_ORANGE
+	
+	; SPRITE_ELM
+	db PAL_BROWN
+	
+	; SPRITE_GOLD_MOM
+	db PAL_ORANGE
+	
+	; SPRITE_KURT
+	db PAL_BROWN
+	
+	; SPRITE_KIMONO_GIRL
+	db PAL_ORANGE
+	
+	; SPRITE_FALKNER
+	db PAL_BLUE
+	
+	; SPRITE_BUGSY
+	db PAL_GREEN
+	
+	; SPRITE_WHITNEY
+	db PAL_ORANGE
+	
+	; SPRITE_MORTY
+	db PAL_BLUE
+	
+	; SPRITE_JASMINE
+	db PAL_BROWN
+	
+	; SPRITE_CHUCK
+	db PAL_BROWN
+	
+	; SPRITE_PRYCE
+	db PAL_BROWN
+	
+	; SPRITE_CLAIR
+	db PAL_BLUE
+	
+	; SPRITE_WILL
+	db PAL_ORANGE
+	
+	; SPRITE_KAREN
+	db PAL_BROWN
 
 
 	; 1-Frame Sprites Below here

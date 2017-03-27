@@ -585,6 +585,81 @@ SpriteSheetPointerTable: ; 17b27 (5:7b27)
 	db $c0 ; byte count
 	db BANK(SilverSprite)
 	
+	; SPRITE_MEI
+	dw MeiSprite
+	db $c0 ; byte count
+	db BANK(MeiSprite)
+	
+	; SPRITE_ELM
+	dw ElmSprite
+	db $c0 ; byte count
+	db BANK(ElmSprite)
+	
+	; SPRITE_GOLD_MOM
+	dw HiroMomSprite
+	db $c0 ; byte count
+	db BANK(HiroMomSprite)
+	
+	; SPRITE_KURT
+	dw KurtSprite
+	db $c0 ; byte count
+	db BANK(KurtSprite)
+	
+	; SPRITE_KIMONO_GIRL
+	dw KimonoGirlSprite
+	db $c0 ; byte count
+	db BANK(KimonoGirlSprite)
+	
+	; SPRITE_FALKNER
+	dw FalknerSprite
+	db $c0 ; byte count
+	db BANK(FalknerSprite)
+	
+	; SPRITE_BUGSY
+	dw BugsySprite
+	db $c0 ; byte count
+	db BANK(BugsySprite)
+	
+	; SPRITE_WHITNEY
+	dw WhitneySprite
+	db $c0 ; byte count
+	db BANK(WhitneySprite)
+	
+	; SPRITE_MORTY
+	dw MortySprite
+	db $c0 ; byte count
+	db BANK(MortySprite)
+	
+	; SPRITE_JASMINE
+	dw JasmineSprite
+	db $c0 ; byte count
+	db BANK(JasmineSprite)
+	
+	; SPRITE_CHUCK
+	dw ChuckSprite
+	db $c0 ; byte count
+	db BANK(ChuckSprite)
+	
+	; SPRITE_PRYCE
+	dw PryceSprite
+	db $c0 ; byte count
+	db BANK(PryceSprite)
+	
+	; SPRITE_CLAIR
+	dw ClairSprite
+	db $c0 ; byte count
+	db BANK(ClairSprite)
+	
+	; SPRITE_WILL
+	dw WillSprite
+	db $c0 ; byte count
+	db BANK(WillSprite)
+	
+	; SPRITE_KAREN
+	dw KarenSprite
+	db $c0 ; byte count
+	db BANK(KarenSprite)
+	
 	
 ; 1 frame sprites start here
 
