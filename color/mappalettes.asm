@@ -1,193 +1,191 @@
 ; Palettes to be used by various maps.
 ; Each byte in mappalettesets.bin refers to one of these palettes.
 
-; Viridian forest sand candidate: RGB 31,31,19
-
-; 0x00
+; 0x00: ???
 	RGB 31,31,31
 	RGB 21,21,21
 	RGB 12,12,12
 	RGB 0,0,0
 
-; 0x01
+; 0x01: Outdoor gray
 	RGB 27,31,27
 	RGB 21,21,21
 	RGB 13,13,13
 	RGB 7,7,7
 
-; 0x02
+; 0x02: Outdoor red
 	RGB 27,31,27
 	RGB 31,19,24
 	RGB 30,10,6
 	RGB 7,7,7
 
-; 0x03
+; 0x03: Outdoor green
 	RGB 22,31,10
 	RGB 12,25,1
 	RGB 5,14,0
 	RGB 7,7,7
 
-; 0x04
+; 0x04: Outdoor blue
 	RGB 23,23,31
 	RGB 18,19,31
 	RGB 13,12,31
 	RGB 7,7,7
 
-; 0x05
+; 0x05: Outdoor yellow
 	RGB 27,31,27
 	RGB 31,31,7
 	RGB 31,16,1
 	RGB 7,7,7
 
-; 0x06
+; 0x06: Outdoor brown
 	RGB 27,31,27
 	RGB 24,18,7
 	RGB 20,15,3
 	RGB 7,7,7
 
-; 0x07
+; 0x07: Outdoor Roof
 	RGB 27,31,27
 	RGB 20,31,14
 	RGB 11,23,5
 	RGB 7,7,7
 
-; 0x08
+; 0x08: Textbox
 	RGB 31,31,31
 	RGB 31,31,31
 	RGB 31,31,31
 	RGB 0,0,0
 
-; 0x09
+; 0x09: Indoor grey
 	RGB 30,28,26
 	RGB 19,19,19
 	RGB 13,13,13
 	RGB 7,7,7
 
-; 0x0a
+; 0x0a: Indoor red
 	RGB 30,28,26
 	RGB 31,19,24
 	RGB 30,10,6
 	RGB 7,7,7
 
-; 0x0b
+; 0x0b: Indoor green
 	RGB 30,28,26
 	RGB 15,20,1
 	RGB 9,13,0
 	RGB 7,7,7
 
-; 0x0c
+; 0x0c: Indoor blue
 	RGB 30,28,26
 	RGB 15,16,31
 	RGB 9,9,31
 	RGB 7,7,7
 
-; 0x0d
+; 0x0d: Indoor yellow
 	RGB 30,28,26
 	RGB 31,31,7
 	RGB 31,16,1
 	RGB 7,7,7
 
-; 0x0e
+; 0x0e: Indoor brown
 	RGB 30,28,26
 	RGB 21,17,7
 	RGB 16,13,3
 	RGB 7,7,7
 
-; 0x0f
+; 0x0f: Indoor light blue
 	RGB 30,28,26
 	RGB 17,19,31
 	RGB 14,16,31
 	RGB 7,7,7
 
-; 0x10
+; 0x10: ???
 	RGB 27,31,27
 	RGB 31,14,28
 	RGB 31,5,21
 	RGB 7,7,7
 
-; 0x11
+; 0x11: ???
 	RGB 27,31,27
 	RGB 24,14,31
 	RGB 13,7,21
 	RGB 7,7,7
 
-; 0x12
+; 0x12: ???
 	RGB 27,31,27
 	RGB 31,19,0
 	RGB 27,10,5
 	RGB 7,7,7
 
-; 0x13
+; 0x13: ???
 	RGB 27,31,27
 	RGB 22,20,10
 	RGB 17,14,3
 	RGB 7,7,7
 
-; 0x14
+; 0x14: ???
 	RGB 27,31,27
 	RGB 25,25,0
 	RGB 20,17,8
 	RGB 7,7,7
 
-; 0x15
+; 0x15: ???
 	RGB 27,31,27
 	RGB 14,17,31
 	RGB 7,11,15
 	RGB 7,7,7
 
-; 0x16
+; 0x16: ???
 	RGB 27,31,27
 	RGB 15,10,31
 	RGB 7,5,15
 	RGB 7,7,7
 
-; 0x17
+; 0x17: Cave grey
 	RGB 15,14,24
 	RGB 11,11,19
 	RGB 7,7,12
 	RGB 0,0,0
 
-; 0x18
+; 0x18: Cave red
 	RGB 15,14,24
 	RGB 14,7,17
 	RGB 13,0,8
 	RGB 0,0,0
 
-; 0x19
+; 0x19: Cave green
 	RGB 15,14,24
 	RGB 8,13,19
 	RGB 0,11,13
 	RGB 0,0,0
 
-; 0x1a
+; 0x1a: Cave blue
 	RGB 15,14,24
 	RGB 5,5,17
 	RGB 3,3,10
 	RGB 0,0,0
 
-; 0x1b
+; 0x1b: Cave yellow
 	RGB 30,30,11
 	RGB 16,14,18
 	RGB 16,14,10
 	RGB 0,0,0
 
-; 0x1c
+; 0x1c: Cave Brown
 	RGB 15,14,24
 	RGB 12,9,15
 	RGB 8,4,5
 	RGB 0,0,0
 
-; 0x1d
+; 0x1d: Cave light blue
 	RGB 15,14,24
 	RGB 13,12,23
 	RGB 11,9,20
 	RGB 0,0,0
 
-; 0x1e: For the guy on the bench in the pokecenter
-	RGB 31,19,10
-	RGB 31,19,24
-	RGB 30,10,6
-	RGB 7,7,7
+; 0x1e: 
+	RGB 0,0,0
+	RGB 0,0,0
+	RGB 0,0,0
+	RGB 0,0,0
 
 ; 0x1f: For Pokeballs when changing boxes
 	RGB 30,28,26
@@ -195,17 +193,17 @@
 	RGB 30,10,6
 	RGB 7,7,7
 
-; 0x20: Rocks in viridian forest
-	RGB 22,31,10
-	RGB 24,18,7
-	RGB 20,15,3
-	RGB 7,7,7
+; 0x20: 
+	RGB 0,0,0
+	RGB 0,0,0
+	RGB 0,0,0
+	RGB 0,0,0
 
 ; 0x21
-	RGB 22,31,10
-	RGB 20,31,14
-	RGB 11,23,5
-	RGB 7,7,7
+	RGB 0,0,0
+	RGB 0,0,0
+	RGB 0,0,0
+	RGB 0,0,0
 
 ; 0x22
 	RGB 0,0,0

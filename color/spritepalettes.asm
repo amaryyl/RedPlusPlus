@@ -1,55 +1,53 @@
-SpritePalettes: ; Taken from pokemon GSC.
-; Palette 4 is used for flashing pokeballs in the pokecenter.
-; Palette 5 is used for exclamation mark bubbles.
-; Palettes 6-7 aren't used, I don't know what they were used for in GSC? Trees maybe?
+SpritePalettes:
+; Taken from Polished Crystal's "Day" Entries for Object Pals
 
-; 0
-	RGB 27,31,27
-	RGB 31,19,10
-	RGB 31,7,1
-	RGB 0,0,0
+	; red
+	RGB 27, 31, 27
+	RGB 31, 19, 10
+	RGB 31, 07, 01
+	RGB 00, 00, 00
 
-; 1
-	RGB 27,31,27
-	RGB 31,19,10
-	RGB 10,9,31
-	RGB 0,0,0
+	; blue
+	RGB 27, 31, 27
+	RGB 31, 19, 10
+	RGB 10, 09, 31
+	RGB 00, 00, 00
 
-; 2
-	RGB 27,31,27
-	RGB 31,19,10
-	RGB 7,23,3
-	RGB 0,0,0
+	; green
+	RGB 27, 31, 27
+	RGB 31, 19, 10
+	RGB 07, 23, 03
+	RGB 00, 00, 00
 
-; 3
-	RGB 27,31,27
-	RGB 31,19,10
-	RGB 15,10,3
-	RGB 0,0,0
+	; brown
+	RGB 27, 31, 27
+	RGB 31, 19, 10
+	RGB 15, 10, 03
+	RGB 00, 00, 00
 
-; 4
-	RGB 27,31,27
-	RGB 31,19,10
-	RGB 30,10,6
-	RGB 0,0,0
+	; purple
+	RGB 27, 31, 27
+	RGB 31, 19, 10
+	RGB 18, 04, 18
+	RGB 00, 00, 00
 
-; 5
-	RGB 31,31,31
-	RGB 31,31,31
-	RGB 13,13,13
-	RGB 0,0,0
+	; silver
+	RGB 31, 31, 31
+	RGB 31, 31, 31
+	RGB 13, 13, 13
+	RGB 00, 00, 00
 
-; 6
-	RGB 22,31,10
-	RGB 12,25,1
-	RGB 5,14,0
-	RGB 7,7,7
+	; tree
+	RGB 22, 31, 10
+	RGB 12, 25, 01
+	RGB 05, 14, 00
+	RGB 07, 07, 07
 
-; 7
-	RGB 27,31,27
-	RGB 24,18,7
-	RGB 20,15,3
-	RGB 7,7,7
+	; rock
+	RGB 27, 31, 27
+	RGB 24, 18, 07
+	RGB 20, 15, 03
+	RGB 07, 07, 07
 
 
 AttackSpritePalettes:

@@ -15,10 +15,11 @@ PAL_ORANGE	EQU 0
 PAL_BLUE	EQU 1
 PAL_GREEN	EQU 2
 PAL_BROWN	EQU 3
-PAL_RANDOM	EQU 4
+PAL_PURPLE	EQU 4
 PAL_EMOJI	EQU 5
 PAL_PLANT	EQU 6
 PAL_ROCK	EQU 7
+PAL_RANDOM	EQU 8 ; sprite IDs assigned this have no fixed pal, but use a random (consistent) one instead
 
 LoadSpritePalettes:
 	ld hl,SpritePalettes
@@ -63,7 +64,7 @@ ColorOverworldSprites:
 .noCarry
 	ld a,[de]		; Get the picture ID's palette
 
-	; If it's 4, that means no particular palette is assigned
+	; If it's PAL_RANDOM, that means no particular palette is assigned
 	cp PAL_RANDOM
 	jr nz,.norandomColor
 
@@ -263,7 +264,7 @@ SpritePaletteAssignments: ; Characters on the overworld
 	db PAL_BLUE
 
 	; 0x18: SPRITE_ROCKET
-	db PAL_RANDOM
+	db PAL_ORANGE
 
 	; 0x19: SPRITE_MEDIUM
 	db PAL_RANDOM
@@ -293,7 +294,7 @@ SpritePaletteAssignments: ; Characters on the overworld
 	db PAL_RANDOM
 
 	; 0x22: SPRITE_SWIMMER
-	db PAL_RANDOM
+	db PAL_BLUE
 
 	; 0x23: SPRITE_WHITE_PLAYER
 	db PAL_RANDOM
@@ -338,10 +339,10 @@ SpritePaletteAssignments: ; Characters on the overworld
 	db PAL_RANDOM
 
 	; 0x31: SPRITE_GUARD ($30)
-	db PAL_RANDOM
+	db PAL_BLUE
 
-	; 0x32: $32
-	db PAL_RANDOM
+	; 0x32: SPRITE_ROCKET_F
+	db PAL_ORANGE
 
 	; 0x33: SPRITE_MOM
 	db PAL_RANDOM
@@ -371,7 +372,7 @@ SpritePaletteAssignments: ; Characters on the overworld
 	db PAL_ORANGE
 
 	; 0x3c: SPRITE_SEEL
-	db PAL_ORANGE
+	db PAL_BLUE
 
 	; SPRITE_BROCK
 	db PAL_BROWN
@@ -386,13 +387,13 @@ SpritePaletteAssignments: ; Characters on the overworld
 	db PAL_ORANGE
 
 	; SPRITE_KOGA
-	db PAL_BLUE
+	db PAL_PURPLE
 
 	; SPRITE_BLAINE
 	db PAL_BROWN
 
 	; SPRITE_BRENDAN
-	db PAL_BROWN
+	db PAL_GREEN
 
 	; SPRITE_FLANNERY
 	db PAL_ORANGE
@@ -543,10 +544,10 @@ SpritePaletteAssignments: ; Characters on the overworld
 	db PAL_ORANGE
 
 	; SPRITE_MEWTWO
-	db PAL_BROWN
+	db PAL_PURPLE
 
 	; SPRITE_MEW
-	db PAL_BROWN
+	db PAL_PURPLE
 
 	; SPRITE_FOSSIL
 	db PAL_ROCK
@@ -561,7 +562,7 @@ SpritePaletteAssignments: ; Characters on the overworld
 	db PAL_BLUE
 
 	; SPRITE_TROPHY
-	db PAL_ROCK
+	db PAL_BROWN
 
 
 AnimationTileset1Palettes:
