@@ -1,4 +1,8 @@
 DisplayTownMap:
+	ld a, [hTilesetType]
+	push af
+	xor a
+	ld [hTilesetType], a
 	call LoadTownMap
 	ld hl, wUpdateSpritesEnabled
 	ld a, [hl]
@@ -83,6 +87,8 @@ DisplayTownMap:
 	pop hl
 	pop af
 	ld [hl], a
+	pop af
+	ld [hTilesetType], a
 	ret
 .pressedUp
 	ld a, [wWhichTownMapLocation]
@@ -110,6 +116,10 @@ TownMapCursor:
 TownMapCursorEnd:
 
 LoadTownMap_Nest:
+	ld a, [hTilesetType]
+	push af
+	xor a
+	ld [hTilesetType], a
 	call LoadTownMap
 	ld hl, wUpdateSpritesEnabled
 	ld a, [hl]
@@ -129,12 +139,18 @@ LoadTownMap_Nest:
 	pop hl
 	pop af
 	ld [hl], a
+	pop af
+	ld [hTilesetType], a
 	ret
 
 MonsNestText:
 	db "'s NEST@"
 
 LoadTownMap_Fly:
+	ld a, [hTilesetType]
+	push af
+	xor a
+	ld [hTilesetType], a
 	call ClearSprites
 	call LoadTownMap
 	call LoadPlayerSpriteGraphics
@@ -217,6 +233,8 @@ LoadTownMap_Fly:
 	pop hl
 	pop af
 	ld [hl], a
+	pop af
+	ld [hTilesetType], a
 	ret
 .pressedUp
 	coord de, 18, 0
@@ -284,7 +302,7 @@ LoadTownMap:
 	call TextBoxBorder
 	call DisableLCD
 	ld hl, WorldMapTileGraphics
-	ld de, vChars2 + $600
+	ld de, vChars2
 	ld bc, WorldMapTileGraphicsEnd - WorldMapTileGraphics
 	ld a, BANK(WorldMapTileGraphics)
 	call FarCopyData2
@@ -293,26 +311,12 @@ LoadTownMap:
 	ld bc, MonNestIconEnd - MonNestIcon
 	ld a, BANK(MonNestIcon)
 	call FarCopyDataDouble
-	coord hl, 0, 0
-	ld de, CompressedMap
-.nextTile
-	ld a, [de]
-	and a
-	jr z, .done
-	ld b, a
-	and $f
-	ld c, a
-	ld a, b
-	swap a
-	and $f
-	add $60
-.writeRunLoop
-	ld [hli], a
-	dec c
-	jr nz, .writeRunLoop
-	inc de
-	jr .nextTile
-.done
+
+	ld hl, KantoMap
+	ld de, wTileMap
+	ld bc, KantoMapEnd - KantoMap
+	call CopyData
+
 	call EnableLCD
 	ld b, SET_PAL_TOWN_MAP
 	call RunPaletteCommand
@@ -324,9 +328,9 @@ LoadTownMap:
 	ld [wTownMapSpriteBlinkingEnabled], a
 	ret
 
-CompressedMap:
-; you can decompress this file with the redrle program in the extras/ dir
-	INCBIN "gfx/town_map.rle"
+KantoMap: ; uses the Gen 2 format
+	INCBIN "gfx/tilemaps/kanto.map"
+KantoMapEnd:
 
 ExitTownMap:
 ; clear town map graphics data and load usual graphics data
@@ -337,6 +341,7 @@ ExitTownMap:
 	call ClearSprites
 	call LoadPlayerSpriteGraphics
 	call LoadFontTilePatterns
+	call ReloadMapData
 	call UpdateSprites
 	jp RunDefaultPaletteCommand
 

@@ -393,8 +393,6 @@ TextBoxGraphicsEnd:
 ENDC
 PokedexTileGraphics:            INCBIN "gfx/pokedex.2bpp"
 PokedexTileGraphicsEnd:
-WorldMapTileGraphics:           INCBIN "gfx/town_map.2bpp"
-WorldMapTileGraphicsEnd:
 PlayerCharacterTitleGraphics:   INCBIN "gfx/player_title.2bpp"
 PlayerCharacterTitleGraphicsEnd:
 
@@ -970,7 +968,8 @@ INCLUDE "engine/game_corner_slots2.asm"
 
 
 SECTION "Pics 4", ROMX, BANK[PICS_4]
-
+WorldMapTileGraphics:           INCBIN "gfx/town_map.2bpp"
+WorldMapTileGraphicsEnd:
 ; Removed 'mon sprites from here
 
 	ORG $0c, $7f2b
