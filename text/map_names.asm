@@ -58,11 +58,11 @@ Route17Name:
 Route18Name:
 	db "ROUTE 18@"
 Route19Name:
-	db "SEA ROUTE 19@"
+	db "ROUTE 19@"
 Route20Name:
-	db "SEA ROUTE 20@"
+	db "ROUTE 20@"
 Route21Name:
-	db "SEA ROUTE 21@"
+	db "ROUTE 21@"
 Route22Name:
 	db "ROUTE 22@"
 Route23Name:

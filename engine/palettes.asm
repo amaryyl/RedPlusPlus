@@ -130,12 +130,12 @@ ENDC
 	ret
 
 
-	ORG $1c, $5f8f
+;	ORG $1c, $5f8f
 ; each byte is the number of loops to make in .asm_71f5b for each badge
 LoopCounts_71f8f: ; 71f8f (1c:5f8f)
 	db $06,$06,$06,$12,$06,$06,$06,$06
 
-	ORG $1c, $5fb6
+;	ORG $1c, $5fb6
 
 InitPartyMenuBlkPacket:
 	ld hl, BlkPacket_PartyMenu
@@ -255,7 +255,7 @@ LoadSGB:
 	ret
 	; Deleted the end of this function which loads the SGB border and stuff
 
-	ORG $1c, $6075
+;	ORG $1c, $6075
 
 PrepareSuperNintendoVRAMTransfer:
 	ld hl, .packetPointers
