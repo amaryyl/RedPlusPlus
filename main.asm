@@ -972,7 +972,11 @@ WorldMapTileGraphics:           INCBIN "gfx/town_map.2bpp"
 WorldMapTileGraphicsEnd:
 ; Removed 'mon sprites from here
 
-	ORG $0c, $7f2b
+;	ORG $0c, $7f2b
+
+Overworld_GFX:     INCBIN "gfx/tilesets/overworld.2bpp"
+Overworld_Block:   INCBIN "gfx/blocksets/overworld.bst"
+
 
 
 SECTION "Battle (bank C)", ROMX, BANK[$C]
@@ -2023,9 +2027,6 @@ INCLUDE "engine/hidden_object_functions18.asm"
 
 SECTION "bank19",ROMX,BANK[$19]
 
-Overworld_GFX:     INCBIN "gfx/tilesets/overworld.t2.2bpp"
-Overworld_Block:   INCBIN "gfx/blocksets/overworld.bst"
-
 RedsHouse1_GFX:
 RedsHouse2_GFX:    INCBIN "gfx/tilesets/reds_house.t7.2bpp"
 RedsHouse1_Block:
@@ -2039,7 +2040,7 @@ ShipPort_GFX:      INCBIN "gfx/tilesets/ship_port.t2.2bpp"
 ShipPort_Block:    INCBIN "gfx/blocksets/ship_port.bst"
 Interior_GFX:      INCBIN "gfx/tilesets/interior.t1.2bpp"
 Interior_Block:    INCBIN "gfx/blocksets/interior.bst"
-Plateau_GFX:       INCBIN "gfx/tilesets/plateau.t10.2bpp"
+Plateau_GFX:       INCBIN "gfx/tilesets/plateau.t6.2bpp"
 Plateau_Block:     INCBIN "gfx/blocksets/plateau.bst"
 
 
