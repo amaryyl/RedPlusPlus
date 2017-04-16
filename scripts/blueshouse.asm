@@ -23,6 +23,10 @@ BluesHouseTextPointers:
 	dw BluesHouseText1
 	dw BluesHouseText2
 	dw BluesHouseText3
+	dw BluesHouseText4
+	dw BluesHouseText5
+	dw BluesHouseText6
+	dw BluesHouseText7
 
 BluesHouseText1:
 	TX_ASM
@@ -86,4 +90,20 @@ BluesHouseText2: ; Daisy, walking around
 
 BluesHouseText3: ; map on table
 	TX_FAR _BluesHouseText3
+	db "@"
+
+BluesHouseText4:
+	TX_FAR _StoveText
+	db "@"
+	
+BluesHouseText5:
+	TX_FAR _SinkText
+	db "@"
+	
+BluesHouseText6:
+	TX_FAR _FridgeText
+	db "@"
+	
+BluesHouseText7:
+	TX_FAR _BluesTVText
 	db "@"

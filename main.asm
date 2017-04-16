@@ -2027,10 +2027,8 @@ INCLUDE "engine/hidden_object_functions18.asm"
 
 SECTION "bank19",ROMX,BANK[$19]
 
-RedsHouse1_GFX:
-RedsHouse2_GFX:    INCBIN "gfx/tilesets/reds_house.t7.2bpp"
-RedsHouse1_Block:
-RedsHouse2_Block:  INCBIN "gfx/blocksets/reds_house.bst"
+RedsHouse_GFX:    INCBIN "gfx/tilesets/reds_house.2bpp"
+RedsHouse_Block:  INCBIN "gfx/blocksets/reds_house.bst"
 
 House_GFX:         INCBIN "gfx/tilesets/house.t2.2bpp"
 House_Block:       INCBIN "gfx/blocksets/house.bst"

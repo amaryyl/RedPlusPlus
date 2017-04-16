@@ -27,6 +27,7 @@ IsPlayerStandingOnDoorTile:
 
 DoorTileIDPointers:
 	dbw OVERWORLD,   OverworldDoorTileIDs
+	dbw REDS_HOUSE,  RedsHouseDoorTileIDs
 	dbw FOREST,      ForestDoorTileIDs
 	dbw MART,        MartDoorTileIDs
 	dbw HOUSE,       HouseDoorTileIDs
@@ -43,6 +44,9 @@ DoorTileIDPointers:
 
 OverworldDoorTileIDs:
 	db $1B,$58,$00
+
+RedsHouseDoorTileIDs:
+	db 26,28,$00
 
 ForestDoorTileIDs:
 	db $3a,$00

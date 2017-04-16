@@ -1,9 +1,9 @@
 WarpTileIDPointers:
 	dw OverworldWarpTileIDs
-	dw RedsHouse1WarpTileIDs
+	dw RedsHouseWarpTileIDs
 	dw MartWarpTileIDs
 	dw ForestWarpTileIDs
-	dw RedsHouse2WarpTileIDs
+	dw UnusedWarpTileIDs ; UNUSED_04
 	dw DojoWarpTileIDs
 	dw PokecenterWarpTileIDs
 	dw GymWarpTileIDs
@@ -32,9 +32,8 @@ MuseumWarpTileIDs:
 GateWarpTileIDs:
 	db $3B
 
-RedsHouse1WarpTileIDs:
-RedsHouse2WarpTileIDs:
-	db $1A,$1C,$FF
+RedsHouseWarpTileIDs:
+	db 26,28,$FF
 
 MartWarpTileIDs:
 PokecenterWarpTileIDs:
@@ -82,4 +81,5 @@ PlateauWarpTileIDs:
 
 ShipPortWarpTileIDs:
 ClubWarpTileIDs:
+UnusedWarpTileIDs:
 	db $FF

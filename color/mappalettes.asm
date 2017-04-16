@@ -86,7 +86,7 @@
 	RGB 7,7,7
 
 ; 0x0e: Indoor brown
-	RGB 30,28,26
+	RGB 26,24,17
 	RGB 21,17,7
 	RGB 16,13,3
 	RGB 7,7,7

@@ -35,3 +35,21 @@ _StandByMeText::
 _TVWrongSideText::
 	text "Oops, wrong side."
 	done
+
+_FridgeText::
+	text "Let's see what's"
+	line "in the fridge..."
+	
+	para "Mountain Dew and"
+	line "Cherry Coke!"
+	done
+	
+_StoveText::
+	text "Nothing on the"
+	line "stove."
+	done
+	
+_SinkText::
+	text "The sink is shiny"
+	line "and clean."
+	done

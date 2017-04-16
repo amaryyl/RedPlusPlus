@@ -46,7 +46,7 @@ BookshelfTileIDs:
 	db_tx_pre BookOrSculptureText
 	db MANSION,      $32
 	db_tx_pre BookOrSculptureText
-	db REDS_HOUSE_1, $32
+	db REDS_HOUSE, $32
 	db_tx_pre BookOrSculptureText
 	db LAB,          $28
 	db_tx_pre BookOrSculptureText
