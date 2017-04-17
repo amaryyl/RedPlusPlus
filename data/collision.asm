@@ -7,6 +7,7 @@ Dojo_Coll::
 Gym_Coll::          INCBIN  "gfx/tilesets/gym.tilecoll"
 Forest_Coll::       INCBIN  "gfx/tilesets/forest.tilecoll"
 House_Coll::        INCBIN  "gfx/tilesets/house.tilecoll"
+OakLab_Coll::       INCBIN  "gfx/tilesets/oak_lab.tilecoll"
 ForestGate_Coll::
 Museum_Coll::
 Gate_Coll::         INCBIN  "gfx/tilesets/gate.tilecoll"

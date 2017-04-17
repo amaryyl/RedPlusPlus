@@ -215,10 +215,10 @@ OaksLabHiddenObjects:
 	db $00,$05,$04
 	db BANK(DisplayOakLabRightPoster)
 	dw DisplayOakLabRightPoster
-	db $01,$00,$04
+	db $04,$00,$04
 	db BANK(DisplayOakLabEmailText)
 	dw DisplayOakLabEmailText
-	db $01,$01,$04
+	db $04,$01,$04
 	db BANK(DisplayOakLabEmailText)
 	dw DisplayOakLabEmailText
 	db $FF

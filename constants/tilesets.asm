@@ -4,7 +4,7 @@ const_value = 0
 	const REDS_HOUSE   ; 1
 	const MART         ; 2
 	const FOREST       ; 3
-	const UNUSED_04    ; 4
+	const OAK_LAB      ; 4
 	const DOJO         ; 5
 	const POKECENTER   ; 6
 	const GYM          ; 7

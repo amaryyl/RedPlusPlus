@@ -3,7 +3,7 @@ Tilesets:
 	tileset RedsHouse_Block,   RedsHouse_GFX,   RedsHouse_Coll,   $FF,$FF,$FF, $FF, INDOOR
 	tileset Mart_Block,        Mart_GFX,        Mart_Coll,        $18,$19,$1E, $FF, INDOOR
 	tileset Forest_Block,      Forest_GFX,      Forest_Coll,      $FF,$FF,$FF, $20, CAVE
-	tileset RedsHouse_Block,   RedsHouse_GFX,   RedsHouse_Coll,   $FF,$FF,$FF, $FF, INDOOR ; UNUSED
+	tileset OakLab_Block,      OakLab_GFX,      OakLab_Coll,      $FF,$FF,$FF, $FF, INDOOR
 	tileset Dojo_Block,        Dojo_GFX,        Dojo_Coll,        $3A,$FF,$FF, $FF, OUTDOOR
 	tileset Pokecenter_Block,  Pokecenter_GFX,  Pokecenter_Coll,  $18,$19,$1E, $FF, INDOOR
 	tileset Gym_Block,         Gym_GFX,         Gym_Coll,         $3A,$FF,$FF, $FF, OUTDOOR

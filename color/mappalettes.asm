@@ -181,11 +181,11 @@
 	RGB 11,9,20
 	RGB 0,0,0
 
-; 0x1e: 
-	RGB 0,0,0
-	RGB 0,0,0
-	RGB 0,0,0
-	RGB 0,0,0
+; 0x1e: Oak Lab Tables
+	RGB 30,28,26
+	RGB 19,19,19
+	RGB 8,24,17
+	RGB 7,7,7
 
 ; 0x1f: For Pokeballs when changing boxes
 	RGB 30,28,26
@@ -193,7 +193,7 @@
 	RGB 30,10,6
 	RGB 7,7,7
 
-; 0x20: 
+; 0x20
 	RGB 0,0,0
 	RGB 0,0,0
 	RGB 0,0,0
