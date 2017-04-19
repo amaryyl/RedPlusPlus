@@ -93,8 +93,8 @@
 
 ; 0x0f: Indoor light blue
 	RGB 30,28,26
-	RGB 17,19,31
-	RGB 14,16,31
+	RGB 17,23,30
+	RGB 13,18,26
 	RGB 7,7,7
 
 ; 0x10: ???
@@ -187,23 +187,23 @@
 	RGB 8,24,17
 	RGB 7,7,7
 
-; 0x1f: For Pokeballs when changing boxes
+; 0x1f: Indoor Red 2
 	RGB 30,28,26
-	RGB 31,19,10
-	RGB 30,10,6
+	RGB 31,16,14
+	RGB 25,10,8
 	RGB 7,7,7
 
-; 0x20
-	RGB 0,0,0
-	RGB 0,0,0
-	RGB 0,0,0
-	RGB 0,0,0
+; 0x20: Indoor Brown 2
+	RGB 30,28,26
+	RGB 21,17,7
+	RGB 16,13,3
+	RGB 7,7,7
 
-; 0x21
-	RGB 0,0,0
-	RGB 0,0,0
-	RGB 0,0,0
-	RGB 0,0,0
+; 0x21: Indoor Purple
+	RGB 30,28,26
+	RGB 25,21,26
+	RGB 18,13,22
+	RGB 7,7,7
 
 ; 0x22
 	RGB 0,0,0

@@ -30,9 +30,9 @@ const_value = 1
 	const CAVE_BROWN        ; 1C
 	const CAVE_LIGHT_BLUE   ; 1D
 	const OAK_LAB_TABLES    ; 1E
-	const PC_POKEBALL_PAL   ; 1F
-	const MAP_PALETTE_20    ; 20
-	const MAP_PALETTE_21    ; 21
+	const INDOOR_RED_2      ; 1F
+	const INDOOR_BROWN_2    ; 20
+	const INDOOR_PURPLE     ; 21
 	const MAP_PALETTE_22    ; 22
 	const MAP_PALETTE_23    ; 23
 	const MAP_PALETTE_24    ; 24
