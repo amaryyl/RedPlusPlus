@@ -4690,22 +4690,10 @@ UnusedHighCriticalMoves:
 	db $FF
 
 ; determines if attack is a critical hit
-; azure heights claims "the fastest pokémon (who are,not coincidentally,
-; among the most popular) tend to CH about 20 to 25% of the time."
+; was originally based on speed, but not anymore
 CriticalHitTest:
 	xor a
 	ld [wCriticalHitOrOHKO], a
-	ld a, [H_WHOSETURN]
-	and a
-	ld a, [wEnemyMonSpecies]
-	jr nz, .handleEnemy
-	ld a, [wBattleMonSpecies]
-.handleEnemy
-	ld [wd0b5], a
-	call GetMonHeader
-	ld a, [wMonHBaseSpeed]
-	ld b, a
-	srl b                        ; (effective (base speed/2))
 	ld a, [H_WHOSETURN]
 	and a
 	ld hl, wPlayerMovePower
@@ -4714,49 +4702,55 @@ CriticalHitTest:
 	ld hl, wEnemyMovePower
 	ld de, wEnemyBattleStatus2
 .calcCriticalHitProbability
-	ld a, [hld]                  ; read base power from RAM
+	ld a, [hld] ; read base power from RAM
 	and a
-	ret z                        ; do nothing if zero
-	dec hl
-	ld c, [hl]                   ; read move id
+	ret z       ; do nothing if 0 BP
+
+	ld c, 0 ; set default entry as 0
 	ld a, [de]
-	bit GettingPumped, a         ; test for focus energy
-	jr nz, .focusEnergyUsed      ; bug: using focus energy causes a shift to the right instead of left,
-	                             ; resulting in 1/4 the usual crit chance
-	sla b                        ; (effective (base speed/2)*2)
-	jr nc, .noFocusEnergyUsed
-	ld b, $ff                    ; cap at 255/256
-	jr .noFocusEnergyUsed
-.focusEnergyUsed
-	srl b
-.noFocusEnergyUsed
-	ld hl, HighCriticalMoves     ; table of high critical hit moves
-.Loop
-	ld a, [hli]                  ; read move from move table
-	cp c                         ; does it match the move about to be used?
-	jr z, .HighCritical          ; if so, the move about to be used is a high critical hit ratio move
-	inc a                        ; move on to the next move, FF terminates loop
-	jr nz, .Loop                 ; check the next move in HighCriticalMoves
-	srl b                        ; /2 for regular move (effective (base speed / 2))
-	jr .SkipHighCritical         ; continue as a normal move
+	bit GettingPumped, a ; are they using Focus Energy?
+	jr z, .CheckCritMove
+	inc c
+.CheckCritMove
+	ld hl, HighCriticalMoves
+	ld a, [H_WHOSETURN]
+	and a
+	jr z, .PlayersTurn
+.EnemyTurn
+	ld a, [wEnemySelectedMove]
+	ld b, a
+	jr .loop
+.PlayersTurn
+	ld a, [wPlayerSelectedMove]
+	ld b, a
+.loop
+	ld a, [hli]
+	cp b
+	jr z, .HighCritical
+	inc a
+	jr nz, .loop
+	jr .SkipHighCritical
 .HighCritical
-	sla b                        ; *2 for high critical hit moves
-	jr nc, .noCarry
-	ld b, $ff                    ; cap at 255/256
-.noCarry
-	sla b                        ; *4 for high critical move (effective (base speed/2)*8))
-	jr nc, .SkipHighCritical
-	ld b, $ff
+	inc c
+	inc c
 .SkipHighCritical
-	call BattleRandom            ; generates a random value, in "a"
-	rlc a
-	rlc a
-	rlc a
-	cp b                         ; check a against calculated crit rate
-	ret nc                       ; no critical hit if no borrow
-	ld a, $1
-	ld [wCriticalHitOrOHKO], a   ; set critical hit flag
+	; eventually add check for crit-boosting held items and such here
+.Calculate
+	ld hl, .Chances
+	ld b, 0
+	add hl, bc
+	call BattleRandom
+	cp [hl]
+	ret nc
+	ld a, 1
+	ld [wCriticalHitOrOHKO], a ; Critical Hit Flag
 	ret
+
+.Chances
+	; 6.25% 12.1% 24.6% 33.2% 49.6% 49.6% 49.6%
+	db $11,  $20,  $40,  $55,  $80,  $80,  $80
+	;   0     1     2     3     4     5     6
+
 
 ; high critical hit moves
 HighCriticalMoves:
