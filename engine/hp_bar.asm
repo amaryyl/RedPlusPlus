@@ -163,7 +163,7 @@ UpdateHPBar_AnimateHPBar:
 	ret
 
 ; Removed UpdateHPBar_CompareNewHPToOldHP from here
-	ORG $03, $7ad7
+;	ORG $03, $7ad7
 
 ; calcs HP difference between bc and de (into de)
 UpdateHPBar_CalcHPDifference:

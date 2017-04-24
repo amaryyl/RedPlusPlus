@@ -977,6 +977,9 @@ WorldMapTileGraphicsEnd:
 Overworld_GFX:     INCBIN "gfx/tilesets/overworld.2bpp"
 Overworld_Block:   INCBIN "gfx/blocksets/overworld.bst"
 
+Museum_GFX:        INCBIN "gfx/tilesets/museum.2bpp"
+Museum2_GFX:       INCBIN "gfx/tilesets/museum2.2bpp"
+Museum_Block:      INCBIN "gfx/blocksets/museum.bst"
 
 
 SECTION "Battle (bank C)", ROMX, BANK[$C]
@@ -2067,11 +2070,7 @@ Pokecenter_GFX:    INCBIN "gfx/tilesets/pokecenter.2bpp"
 Mart_Block:
 Pokecenter_Block:  INCBIN "gfx/blocksets/pokecenter.bst"
 
-ForestGate_GFX:
-Museum_GFX:
 Gate_GFX:          INCBIN "gfx/tilesets/gate.t1.2bpp"
-ForestGate_Block:
-Museum_Block:
 Gate_Block:        INCBIN "gfx/blocksets/gate.bst"
 
 Forest_GFX:        INCBIN "gfx/tilesets/forest.2bpp"

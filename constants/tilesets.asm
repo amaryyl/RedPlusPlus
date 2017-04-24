@@ -9,8 +9,8 @@ const_value = 0
 	const POKECENTER   ; 6
 	const GYM          ; 7
 	const HOUSE        ; 8
-	const FOREST_GATE  ; 9
-	const MUSEUM       ; 10
+	const MUSEUM       ; 9
+	const MUSEUM_2     ; 10
 	const UNDERGROUND  ; 11
 	const GATE         ; 12
 	const SHIP         ; 13

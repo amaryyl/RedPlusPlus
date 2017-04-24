@@ -31,8 +31,8 @@ DoorTileIDPointers:
 	dbw FOREST,      ForestDoorTileIDs
 	dbw MART,        MartDoorTileIDs
 	dbw HOUSE,       HouseDoorTileIDs
-	dbw FOREST_GATE, TilesetMuseumDoorTileIDs
 	dbw MUSEUM,      TilesetMuseumDoorTileIDs
+	dbw MUSEUM_2,    TilesetMuseumDoorTileIDs
 	dbw GATE,        TilesetMuseumDoorTileIDs
 	dbw SHIP,        ShipDoorTileIDs
 	dbw LOBBY,       LobbyDoorTileIDs
@@ -58,7 +58,7 @@ HouseDoorTileIDs:
 	db $54,$00
 
 TilesetMuseumDoorTileIDs:
-	db $3b,$00
+	db 22,$00
 
 ShipDoorTileIDs:
 	db $1e,$00

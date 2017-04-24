@@ -3,12 +3,12 @@ WarpTileIDPointers:
 	dw RedsHouseWarpTileIDs
 	dw MartWarpTileIDs
 	dw ForestWarpTileIDs
-	dw UnusedWarpTileIDs ; UNUSED_04
+	dw UnusedWarpTileIDs ; Oak Lab (No Warp Tiles)
 	dw DojoWarpTileIDs
 	dw PokecenterWarpTileIDs
 	dw GymWarpTileIDs
 	dw HouseWarpTileIDs
-	dw ForestGateWarpTileIDs
+	dw MuseumWarpTileIDs
 	dw MuseumWarpTileIDs
 	dw UndergroundWarpTileIDs
 	dw GateWarpTileIDs
@@ -27,10 +27,11 @@ WarpTileIDPointers:
 OverworldWarpTileIDs:
 	db $1B,$58,$FF
 
-ForestGateWarpTileIDs:
 MuseumWarpTileIDs:
+	db 22,30,$FF
+
 GateWarpTileIDs:
-	db $3B
+	db $3B,$1A,$1C,$FF
 
 RedsHouseWarpTileIDs:
 	db 26,28,$FF
