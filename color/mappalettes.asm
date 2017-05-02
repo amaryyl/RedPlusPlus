@@ -51,8 +51,8 @@
 
 ; 0x08: Textbox
 	RGB 31,31,31
-	RGB 31,31,31
-	RGB 31,31,31
+	RGB 19,19,19
+	RGB 13,13,13
 	RGB 0,0,0
 
 ; 0x09: Indoor grey
