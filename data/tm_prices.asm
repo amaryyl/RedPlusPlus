@@ -14,7 +14,7 @@ TechnicalMachinePrices:
 	dn 0, 0  ; TM_23, TM_24
 	dn 0, 0  ; TM_25, TM_26
 	dn 0, 0  ; TM_27, TM_28
-	dn 0, 0 ; TM_29, TM_30
+	dn 0, 0  ; TM_29, TM_30
 	dn 0, 0  ; TM_31, TM_32
 	dn 0, 0  ; TM_33, TM_34
 	dn 0, 0  ; TM_35, TM_36
