@@ -1,6 +1,7 @@
 Route1Mons:
 ; Grass Mons
 	db $19
+	db 1,EEVEE
 	db 3,ZUBAT
 	db 3,VULPIX
 	db 2,ODDISH
